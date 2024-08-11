@@ -1,0 +1,45 @@
+.promo {}
+
+.promo__title {
+    max-width: 1140px;
+    margin-bottom: 50px;
+
+    @include mediaMobileLarge () {
+        margin-bottom: 20px;
+    }
+}
+
+
+
+.promo__popup {
+
+    border-radius: 32px;
+
+    &:hover {
+
+        img,
+        svg {
+            transform: scale(1.1);
+        }
+
+    }
+
+}
+
+.promo__popup-link {
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+    overflow: hidden;
+
+    border-radius: 32px;
+
+    transition: transform linear 300ms;
+}
+
+.promo__popup-img {
+    border-radius: 32px;
+    width: 100%;
+
+    transition: transform linear 300ms;
+}

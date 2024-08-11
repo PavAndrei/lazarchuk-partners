@@ -1,0 +1,128 @@
+.icon--logotype {
+	width: 198px;
+	height: 42px;
+	fill: #423D8A;
+}
+
+.icon--location-icon {
+	width: 24px;
+	height: 30px;
+	fill: #423D8A;
+}
+
+.icon--start-whatsapp {
+	width: 30px;
+	height: 30px;
+	fill: #00E676;
+	stroke: #FFFFFF;
+}
+
+.icon--start-tg {
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	fill: #FFFFFF;
+	stroke: #B5CFE4;
+	padding: 1px;
+	background-color: #40B3E0;
+}
+
+.icon--experts-slider-arrow {
+	width: 11px;
+	height: 19px;
+	fill: #000000;
+}
+
+.icon--arrow-down {
+	width: 13px;
+	height: 23px;
+	stroke: #000000;
+}
+
+.icon--youtube,
+.icon--vk,
+.icon--telegram,
+.icon--whatsup {
+	fill: #B3B3BC;
+	stroke: transparent;
+	width: 28px;
+	height: 28px;
+	cursor: pointer;
+
+	transition: fill 300ms ease-in;
+
+	&:hover {
+		fill: #000000;
+
+
+	}
+}
+
+.icon--player-btn {
+	width: 83px;
+	height: 83px;
+	fill: #F9D706;
+	position: absolute;
+	top: calc(50% - 41px);
+	left: calc(50% - 41px);
+	z-index: 1000;
+	display: block;
+
+	transition: transform linear 300ms;
+
+	@include mediaMobileMedium() {
+		width: 41px;
+		height: 41px;
+		top: calc(50% - 20px);
+		left: calc(50% - 20px);
+	}
+}
+
+.icon--player-btn--closed {
+	display: none;
+}
+
+.icon--star {
+	width: 16px;
+	height: 16px;
+	fill: #F9D706;
+	transform: translateY(4px);
+}
+
+.icon--phone {
+	width: 20px;
+	height: 20px;
+	fill: #FFFFFF;
+}
+
+.icon--tg-contacts {
+	fill: #0088CC;
+	width: 40px;
+	height: 40px;
+	transition: fill 300ms ease-in;
+
+	&:hover {
+		fill: #423D8A;
+
+		@include mediaMobileLarge() {
+			fill: unset;
+		}
+	}
+}
+
+.icon--whatsup-contacts {
+	fill: #00E676;
+	width: 45px;
+	height: 45px;
+	stroke: transparent;
+	transition: fill 300ms ease-in;
+
+	&:hover {
+		fill: #423D8A;
+
+		@include mediaMobileLarge() {
+			fill: unset;
+		}
+	}
+
+}

@@ -1,0 +1,71 @@
+<section class="consultancy">
+    <div class="consultancy__info">
+        <div class="container">
+            <div class="consultancy__inner">
+                <div class="consultancy__promo">
+                    <h3 class="title-3--white consultancy__title">Получите бесплатную консультацию по открытию компании
+                        в
+                        ОАЭ</h3>
+
+                    <div class="consultancy__promo-content">
+                        <div class="consultancy__promo-price">
+                            <p class="consultancy__promo-time">До 30.11 стоимость</p>
+                            <div class="consultancy__promo-sales">
+                                <p class="consultancy__promo-sales__new">$0</p>
+                                <p class="consultancy__promo-sales__old">$ 450</p>
+                            </div>
+                        </div>
+
+                        <div class="consultancy__promo-picture">
+                            <img src="./../../img/consultancy/consultancy-bg.png" alt="consultancy-photo">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="consultancy__registration">
+                    <h3 class="title-3 consultancy__title">Заполните форму, чтобы записаться на консультацию к эксперту
+                    </h3>
+
+                    <form class="consultancy__registration-form">
+                        <input class="consultancy__registration-input" name="name" placeholder="Напишите Ваше имя"
+                            type="text">
+                        <input class="consultancy__registration-input" name="phone" placeholder="+7 (999) 999-99-99"
+                            type="tel">
+                        <button type="submit" class="btn consultancy__registration-btn">Оставить заявку</button>
+
+                        <p class="consultancy__registration-text--bold">Нажимая кнопку, вы даете согласие на обработку
+                            персональных данных</p>
+
+                        <p class="start__registration-text--bold">или напишите нам:</p>
+                        <div class="consultancy__registration-social">
+                            <a href="#!">
+                                <svg class="icon icon--start-whatsapp">
+                                    <use href="./img/svgsprite/sprite.symbol.svg#start-whatsapp"></use>
+                                </svg>
+                            </a>
+                            <a href="#!">
+                                <svg class="icon icon--start-tg">
+                                    <use href="./img/svgsprite/sprite.symbol.svg#start-tg"></use>
+                                </svg>
+                            </a>
+                            <p class="consultancy__registration-social__text">Среднее время ответа 5 минут</p>
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="consultancy__employees">
+        <div class="container">
+            <div class="consultancy__employees-row">
+
+                @@loop('cards/employees.html', './data/employees.json')
+
+            </div>
+        </div>
+    </div>
+
+</section>

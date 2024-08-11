@@ -1,0 +1,79 @@
+.citizenship {
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.05);
+    background: radial-gradient(50% 50% at 50% 50%, rgb(66, 61, 138) 0%, rgb(65, 61, 138) 100%);
+    border-radius: 32px;
+    padding: 50px 0;
+}
+
+.citizenship__title {
+    margin-bottom: 12px;
+
+    @include mediaMobileLarge() {
+        text-align: center;
+        max-width: 100%;
+    }
+}
+
+.citizenship__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 102px;
+
+    @include mediaTabletSmall() {
+        grid-template-columns: auto;
+    }
+}
+
+.citizenship__info {}
+
+.citizenship__subtitle {
+    max-width: 480px;
+    margin-bottom: 50px;
+
+    @include mediaMobileLarge() {
+        text-align: center;
+        max-width: 100%;
+        margin-bottom: 25px;
+    }
+}
+
+.citizenship__form {
+    display: grid;
+}
+
+.citizenship__form-input {
+    margin-bottom: 20px;
+    border-radius: 16px;
+    background-color: var(--text-white);
+    padding: 20px 30px;
+
+    &::placeholder {
+        font-family: var(--font-accent);
+        font-size: 18px;
+        letter-spacing: -0.01em;
+        color: #b3b3bc;
+    }
+}
+
+.citizenship__form-btn {
+    margin-top: 40px;
+    margin-bottom: 17px;
+
+    @include mediaMobileMedium() {
+        margin-top: 20px;
+        text-wrap: wrap;
+    }
+}
+
+.citizenship__info-text {
+    font-size: 12px;
+    text-align: center;
+    color: var(--text-white-darker);
+}
+
+.citizenship__picture {
+
+    @include mediaTabletSmall() {
+        display: none;
+    }
+}

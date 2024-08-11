@@ -1,0 +1,75 @@
+.comments-horizontal__swiper {
+
+    max-height: 350px !important;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+
+
+    .swiper-slide {
+        padding: 0 10px 30px;
+        height: 100% !important;
+        min-height: 300px;
+        box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.05);
+        border-radius: 32px;
+        padding: 20px;
+
+
+        &>* {
+            height: 100%;
+        }
+
+    }
+}
+
+
+.comments-horizontal__slider {
+    margin-bottom: 25px;
+
+    display: none;
+
+    @include mediaLaptop() {
+        display: block;
+    }
+}
+
+.swiper {}
+
+.comments-horizontal__swiper {}
+
+.swiper-wrapper {}
+
+.comments-horizontal__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+    height: 100%;
+}
+
+.comments-horizontal__card-user {}
+
+.comments-horizontal__card-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.comments-horizontal__card-info {}
+
+.comments-horizontal__card-name {
+    text-align: center;
+}
+
+.comments-horizontal__card-ratings {
+    text-align: center;
+}
+
+.comments-horizontal__card-text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 10;
+    overflow: hidden;
+    text-align: center;
+}

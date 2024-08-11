@@ -1,0 +1,37 @@
+a.btn,
+.btn {
+    background-color: #F9D706;
+
+    padding: 19px 64px;
+    border-radius: 16px;
+    display: block;
+    white-space: nowrap;
+    max-width: 100%;
+
+    font-family: var(--font-accent);
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: var(--text-black);
+
+    transition: background-color ease-in 300ms, color ease-in 300ms;
+
+    @include mediaMobileLarge () {}
+
+    @include mediaMobileSmall () {
+        padding: 19px 32px;
+    }
+
+    @include mediaMobileExtraSmall () {
+        padding: 19px 10px;
+    }
+
+
+    &:hover {
+        background-color: #ae9c22;
+
+        color: var(--text-white-darker);
+    }
+
+}

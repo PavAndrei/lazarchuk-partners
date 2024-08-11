@@ -1,0 +1,9 @@
+main {
+    display: grid;
+    gap: 100px;
+    margin-bottom: 50px;
+
+    @include mediaMobileLarge () {
+        gap: 60px;
+    }
+}

@@ -1,0 +1,28 @@
+<div class="offers__item">
+    <h4 class="offers__item-title">@@name</h4>
+    <p class="offers__description">@@descriptionи</p>
+
+    <ul class="offers__list">
+
+        @@for(var i = 0; i < context.conditionsActive.length; i++){ <li
+            class="offers__list-item offers__list-item--active">
+            `+context.conditionsActive[i]+`
+            </li>
+            }
+            @@for(var i = 0; i < context.conditionsDisabled.length; i++){ <li class="offers__list-item">
+                `+context.conditionsDisabled[i]+`
+                </li>
+                }
+    </ul>
+
+    <div class="offers__price">
+        <div class="offers__price-current">@@currentPrice</div>
+        <div class="offers__price-info">
+            <div class="offers__price-date">@@sales</div>
+            <div class="offers__price-old">@@oldPrice</div>
+        </div>
+    </div>
+    <button class="btn offers__btn" data-modal>подробнее</button>
+    <a class="offers__link" href="#!">Узнать, что входит в стоимость</a>
+
+</div>

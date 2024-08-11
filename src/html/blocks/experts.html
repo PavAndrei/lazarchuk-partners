@@ -1,0 +1,65 @@
+<section class="experts">
+    <div class="experts__content">
+        <div class="container">
+            <div class="experts__inner">
+                <div class="experts__portfolio">
+                    <h3 class="title-3--white experts__title">Мы поможем Вам пройти путь от открытия до масштабирования
+                        бизнеса и вот почему:</h3>
+                    <ul class="experts__portfolio-list">
+                        <li class="experts__portfolio-item">
+                            <p class="experts__list-text experts__list-text--years">0</p>
+                            <span class="experts__list-text--descr">лет на рынке. Работаем с 2008</span>
+
+                        </li>
+                        <li class="experts__portfolio-item">
+                            <p class="experts__list-text experts__list-text--helps" data-max="2700">0</p>
+                            <span class="experts__list-text--descr">Компаний получили юридическую помощь на
+                                международной арене</span>
+
+                        </li>
+                        <li class="experts__portfolio-item">
+                            <p class="experts__list-text experts__list-text--clients">0</p>
+                            <span class="experts__list-text--descr">клиентов рекомендуют нас друзьям</span>
+
+                        </li>
+                        <li class="experts__portfolio-item">
+                            <p class="experts__list-text experts__list-text--accounts">0</p>
+                            <span class="experts__list-text--descr">успешно открытых счетов в ОАЭ</span>
+
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="experts__director">
+                    <img class="experts__director-photo" src="./../../img/experts/ceo.png" alt="ceo">
+                    <div class="experts__director-info">
+                        <p class="title-3--white experts__director-name">Виталий Лазарчук</p>
+                        <p class="experts__director-position">СЕО «Лазарчук и Партнёры»</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="experts__slider">
+        <div class="container">
+            <div class="swiper-experts">
+                <div class="swiper-wrapper">
+                    @@loop('sliders/expert-sliders-slide.html', './data/experts.json')
+                </div>
+
+                <div class="experts-button-prev">
+                    <svg class="icon icon--experts-slider-arrow">
+                        <use href="./img/svgsprite/sprite.symbol.svg#experts-slider-arrow"></use>
+                    </svg>
+                </div>
+                <div class="experts-button-next">
+                    <svg class="icon icon--experts-slider-arrow">
+                        <use href="./img/svgsprite/sprite.symbol.svg#experts-slider-arrow"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+</section>

@@ -1,0 +1,158 @@
+<section class="comments">
+    <div class="container">
+
+        <h2 class="title-2 comments__title">
+            За 2022 год открыли за рубежом
+            441 компанию и 754 счета в банках
+        </h2>
+
+        <div class="comments-horizontal__slider">
+
+            <div class="swiper comments-horizontal__swiper" id="comments-horizontal">
+                <div class="swiper-wrapper smooth-transition">
+                    @@loop('cards/horizontal-card.html', './data/comments-4.json')
+                </div>
+            </div>
+
+        </div>
+
+        <div class="comments__content">
+
+            <div class="comments__col">
+
+                <div class="comments__col-ratings">
+                    <p class="comments__col-text">
+                        Рейтинг на основе <span>363</span> отзывов
+                    </p>
+                    <ul class="comments__stars-list">
+                        <li class="comments__stars-item">
+                            <svg class="icon icon--star">
+                                <use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+                            </svg>
+                        </li>
+                        <li class="comments__stars-item">
+                            <svg class="icon icon--star">
+                                <use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+                            </svg>
+                        </li>
+                        <li class="comments__stars-item">
+                            <svg class="icon icon--star">
+                                <use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+                            </svg>
+                        </li>
+                        <li class="comments__stars-item">
+                            <svg class="icon icon--star">
+                                <use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+                            </svg>
+                        </li>
+                        <li class="comments__stars-item">
+                            <svg class="icon icon--star">
+                                <use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+                            </svg>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="swiper comments__swiper" id="comments__col-1">
+                    <div class="swiper-wrapper smooth-transition">
+                        @@loop('cards/comments-card.html', './data/comments-1.json')
+                    </div>
+                </div>
+            </div>
+
+            <div class="comments__col">
+                <div class="swiper comments__swiper" id="comments__col-2">
+                    <div class="swiper-wrapper smooth-transition">
+                        @@loop('cards/comments-card.html', './data/comments-2.json')
+                    </div>
+                </div>
+            </div>
+
+            <div class="comments__col">
+                <div class="swiper comments__swiper" id="comments__col-3">
+                    <div class="swiper-wrapper smooth-transition">
+                        @@loop('cards/comments-card.html', './data/comments-3.json')
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="comments__reviews">
+            <div class="swiper" id="swiperStories">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="comments__reviews-item">
+                            <img class="comments__reviews-img" src="./../../img/stories/01.png" alt="photo">
+                            <p class="comments__reviews-username">Игорь Мощинский</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="comments__reviews-item">
+                            <img class="comments__reviews-img" src="./../../img/stories/02.png" alt="photo">
+                            <p class="comments__reviews-username">Владислав Овчинников</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="comments__reviews-item">
+                            <img class="comments__reviews-img" src="./../../img/stories/03.png" alt="photo">
+                            <p class="comments__reviews-username">Ирина Смольянинова</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="comments__reviews-item">
+                            <img class="comments__reviews-img" src="./../../img/stories/04.png" alt="photo">
+                            <p class="comments__reviews-username">Екатерина Иванович</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="comments__reviews-item">
+                            <img class="comments__reviews-img" src="./../../img/stories/05.png" alt="photo">
+                            <p class="comments__reviews-username">Арсений Петров</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="comments__reviews-item">
+                            <img class="comments__reviews-img" src="./../../img/stories/06.png" alt="photo">
+                            <p class="comments__reviews-username">Мария Дмитриева</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="comments__reviews-item">
+                            <img class="comments__reviews-img" src="./../../img/stories/07.png" alt="photo">
+                            <p class="comments__reviews-username">Аделия Колосова</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="comments__reviews-item">
+                            <img class="comments__reviews-img" src="./../../img/stories/08.png" alt="photo">
+                            <p class="comments__reviews-username">Вероника Иванова</p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="comments__nav">
+                    <div class="comments-button-prev">
+                        <svg class="icon icon--experts-slider-arrow">
+                            <use href="./img/svgsprite/sprite.symbol.svg#experts-slider-arrow"></use>
+                        </svg>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="comments-button-next">
+                        <svg class="icon icon--experts-slider-arrow">
+                            <use href="./img/svgsprite/sprite.symbol.svg#experts-slider-arrow"></use>
+                        </svg>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
